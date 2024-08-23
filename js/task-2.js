@@ -27,20 +27,10 @@ const images = [
 
 const gallery = document.querySelector('.gallery');
 
-// const galleryItems = images.map(({ url, alt }) => {
-//   const listItem = document.createElement('li');
-//   const imgEl = document.createElement('img');
-//   imgEl.width = '360';
-//   imgEl.height = '300';
-//   imgEl.src = url;
-//   imgEl.alt = alt;
-//   listItem.appendChild(imgEl);
-
-//   return listItem;
-// });
 const galleryItems = images
   .map(element => {
-    return `<li class="gallery-item"><img src ="${element.url}" alt = "${element.alt}" width = "360" height = "300"/></li>`;
+    return `<li class="gallery-item"><img src ="${element.url}" 
+    alt = "${element.alt}" width = "360" height = "300"/></li>`;
   })
   .join('');
 
